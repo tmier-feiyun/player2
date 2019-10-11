@@ -1,0 +1,178 @@
+body {
+  background: url('../images/bg.jpg') no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  width: 100%;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+.w1280 {
+  width: 980px;
+  margin: 0 auto;
+}
+.w1280 span img {
+  width: 48px;
+  height: 48px;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: 1.2s ease;
+}
+.w1280 span img:hover {
+  transform: rotate(360deg);
+}
+.w1280 a {
+  text-align: center;
+  height: 56px;
+  width: 56px;
+  display: block;
+  float: right;
+  line-height: 56px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 49%;
+  padding-right: 3px;
+  opacity: 0.8;
+}
+.w1280 a:hover {
+  background: linear-gradient(56deg, #DBFF8F, #EE1F25);
+  color: #fff;
+  opacity: 0.6;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.player-container {
+  width: 980px;
+  max-width: 980px;
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.player-container .toolbar-title {
+  height: 56px;
+  line-height: 56px;
+  width: auto;
+  margin-top: 30px !important;
+  margin: 76px -8px 0 !important;
+  box-sizing: border-box;
+  padding-left: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.player-container .toolbar-title a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  background-color: #7e7e7e;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.player-container .toolbar-title a:hover {
+  opacity: 1;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.player-container .player {
+  position: relative;
+  margin: 20px -8px 0 !important;
+  padding: 15px!important;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player-container .player video {
+  display: block !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 1367px) {
+  .player-container {
+    width: 96%;
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1024px) {
+  .player-container {
+    width: 92%;
+  }
+}
+@media (min-width: 600px) {
+  .player-container {
+    width: 94%;
+  }
+}
+.download-video {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  transition: 1.2s;
+  animation: huang 0.6s infinite;
+  z-index: 999;
+}
+.download-video img {
+  width: 36px;
+  height: 36px;
+}
+.download-video:hover img {
+  transform: scale(1.6);
+}
+@keyframes huang {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  85% {
+    transform: rotate(-15deg);
+  }
+}
